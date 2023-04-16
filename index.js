@@ -4,9 +4,9 @@ function countdownToBirthday() {
   // Get today's date and time
   const NOW = new Date().getTime()
   // Set the date we're counting down to
-  const BIRTHDAY_DATE = new Date("May 27, 2023 07:11:00").getTime()
+  const VACATION_DATE = new Date("May 27, 2023 08:15:00").getTime()
   // Find the distance between now and the count down date
-  const TIME_LEFT = BIRTHDAY_DATE - NOW
+  const TIME_LEFT = VACATION_DATE - NOW
   // Addressing what to do when the countdown reaches 0
   if (TIME_LEFT < 0) {
     countdownToBirthdayCompleted()
