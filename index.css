@@ -9,9 +9,11 @@ body {
   margin: 0 auto;
   text-align: center;
   color: #fff;
-  background: #16222a;
-  background: -webkit-linear-gradient(to right, #3a6073, #16222a);
-  background: linear-gradient(to right, #3a6073, #16222a);
+  background-image: url("./images/background.gif");
+  background-size: cover;
+  height: 100vh;
+  max-width: 100%;
+}
 }
 
 .container {
