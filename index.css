@@ -8,12 +8,16 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0 auto;
   text-align: center;
-  color: #fff;
-  background-image: url("./images/background.gif");
+  color: #ff6b6b;
+  background-image: url("./images/background-3.gif");
   background-size: cover;
   height: 100vh;
   max-width: 100%;
+  overflow: hidden;
 }
+
+#header {
+  margin: 1rem auto;
 }
 
 .container {
