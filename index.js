@@ -1,6 +1,7 @@
-// TODO: Clean up countdown code
+// Set the count down function to run every 1 second
+const TIMER_INTERVAL = setInterval(countdownToVacation, 1000)
 
-function countdownToBirthday() {
+function countdownToVacation() {
   // Get today's date and time
   const NOW = new Date().getTime()
   // Set the date we're counting down to
@@ -9,7 +10,7 @@ function countdownToBirthday() {
   const TIME_LEFT = VACATION_DATE - NOW
   // Addressing what to do when the countdown reaches 0
   if (TIME_LEFT < 0) {
-    countdownToBirthdayCompleted()
+    countdownToVacationCompleted()
   }
   // Time calculations for days, hours, minutes and seconds
   const DAYS = Math.floor(TIME_LEFT / (1000 * 60 * 60 * 24))
@@ -25,12 +26,11 @@ function countdownToBirthday() {
   document.getElementById("seconds").innerHTML = SECONDS
 }
 
-function countdownToBirthdayCompleted() {
-  clearInterval(countdownToBirthday)
-  document.getElementById("birthday-countdown").style.display = "none"
+function countdownToVacationCompleted() {
+  clearInterval(TIMER_INTERVAL)
+  document.getElementById("vacation-countdown").style.display = "none"
+  document.getElementById("header-text").innerText = `Enjoy your vacation!`
   return
 }
 // Initialize the function
-countdownToBirthday()
-// Set the count down function to run every 1 second
-setInterval(countdownToBirthday, 1000)
+countdownToVacation()
