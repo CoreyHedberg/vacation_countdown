@@ -1,2 +1,12 @@
-# vacation_countdown
-A simple countdown app to show the time until our Philippines vacation.
+# Vacation Countdown
+
+A simple countdown site to show the time until our next vacation.
+
+## Languages Used
+
+<image src="readme_files/html.svg" width="55">&nbsp; &nbsp; <image src="readme_files/css.svg" width="55">&nbsp; &nbsp; <image src="readme_files/js.svg" width="55">
+
+## Author
+
+**Corey Hedberg** | _Aspiring Software Developer_<br>
+[Website](https://coreyhedberg.dev/) &bull; [LinkedIn](https://www.linkedin.com/in/coreyhedberg/)
